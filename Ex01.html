@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex01</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    document.write(a + '<br>');
+    document.write(b + '<br>');
+    let temp;
+    let input = +prompt('Nhập n số Fibonaci cần in: ');
+    for (let i = 0; i < input - 2; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+        document.write(temp + '<br>');
+    }
+</script>
+</body>
+</html>

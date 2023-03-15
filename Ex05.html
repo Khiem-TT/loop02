@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex05</title>
+</head>
+<body>
+<script>
+    let p = +prompt('Nhập số tiền định gửi: ');
+    let t = +prompt('Nhập số tháng định gửi: ');
+    let r = +prompt('Nhập lãi suất: ');
+    let a = p;
+    for (let i = 0; i < t; i++) {
+        a = a * r + a;
+    }
+    alert(`Số tiền lãi sau ${t} tháng là: ${(a - p).toLocaleString()}`);
+</script>
+</body>
+</html>

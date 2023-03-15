@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex02</title>
+</head>
+<body>
+<script>
+    // C1:
+    let n = +prompt('Nhập số nguyên dương: ');
+    let gt = 1;
+    if (n === 0) {
+        gt = 1;
+    }
+    for (let i = 1; i <= n; i++) {
+        gt *= i;
+    }
+
+    document.write(gt);
+
+    // C2:
+    // function factorial(x) {
+    //     if (x === 0) {
+    //         return 1;
+    //     }
+    //     return x * factorial(x - 1);
+    // }
+    //
+    // document.write(factorial(n));
+</script>
+</body>
+</html>
